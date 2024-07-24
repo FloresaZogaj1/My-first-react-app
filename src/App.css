@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .App-logo {
@@ -9,7 +11,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: none; 
   }
 }
 
@@ -22,17 +24,42 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .App-link {
   color: #61dafb;
+  text-decoration: none;
 }
 
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: none;
   }
   to {
-    transform: rotate(360deg);
+    transform: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .App-header {
+    font-size: calc(8px + 2vmin);
+    padding: 10px;
+  }
+
+  .App-logo {
+    height: 30vmin;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  .App-header {
+    font-size: calc(9px + 2vmin);
+    padding: 15px;
+  }
+
+  .App-logo {
+    height: 35vmin;
   }
 }
